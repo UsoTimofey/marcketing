@@ -13,9 +13,28 @@
   padding: 0 10px;
 }
 
+.title {
+  position: relative;
+  color: #242121;
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 75px;
+  align-self: start;
+}
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: #FCBB08;
+}
+
 .header__top {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  width: 100%;
   background-color: #fff;
 }
 .header__top-inner {
@@ -76,32 +95,94 @@
 
 .about {
   background-color: #F6F8FA;
-  padding: 150px 144px;
+  padding: 150px 0 160px;
+}
+.about__title {
+  font-size: 48px;
+  flex: 1 0 235px;
 }
 .about__inner {
   display: flex;
   justify-content: space-between;
+  gap: 172px;
 }
-.about__text p {
-  max-width: 770px;
+.about__text p:not(:last-child) {
   margin-bottom: 16px;
 }
 
-.title {
-  position: relative;
-  color: #242121;
-  font-family: Montserrat;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 75px;
-  align-self: start;
+.expertise {
+  padding: 143px 0 188px;
 }
-.title::after {
+.expertise__title {
+  margin-bottom: 90px;
+}
+.expertise__inner {
+  display: flex;
+  margin-bottom: 110px;
+}
+.expertise__info {
+  margin-top: 10px;
+  width: 370px;
+  gap: 30px;
+  flex: none;
+}
+.expertise__info-item {
+  position: relative;
+  border-top: 2px solid #1D1D1D;
+  padding: 2px 0 28px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  color: #1d1d1d;
+}
+.expertise__info-item span {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 7px;
+}
+.expertise__info-item span::before {
   content: "";
   position: absolute;
-  bottom: -15px;
-  left: 0;
-  width: 60px;
-  height: 4px;
-  background-color: #FCBB08;
+  height: 2px;
+  background-color: #f0f0f0;
+  right: -7px;
+  top: -2px;
+  width: 100%;
+}
+.expertise__items {
+  display: flex;
+}
+.expertise__item {
+  display: flex;
+  position: relative;
+  gap: 35px;
+  flex-basis: 370px;
+  padding-left: 85px;
+}
+.expertise__item img {
+  width: 50px;
+  height: 50px;
+}
+.expertise__item-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.expertise__item-text {
+  color: #777;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.expertise__text p {
+  margin-left: 30px;
+}
+.expertise__text p:not(:last-child) {
+  margin-bottom: 25px;
 }
