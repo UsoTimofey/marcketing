@@ -186,3 +186,19 @@
 .expertise__text p:not(:last-child) {
   margin-bottom: 25px;
 }
+
+.magic {
+  padding: 100px 0 215px;
+  background: url("../img/magic/img.jpg") left/50% no-repeat;
+  background-color: #F6F8FA;
+}
+.magic__inner {
+  max-width: 470px;
+  margin-left: auto;
+}
+.magic__title {
+  margin-bottom: 67px;
+}
+.magic__text p:not(:last-child) {
+  margin-bottom: 25px;
+}
