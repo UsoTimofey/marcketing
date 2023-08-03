@@ -9,7 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">                                                                                             <title>marketing</title>
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.min.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>                                                                        
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.min.css"> 
+    <title>marketing</title>                                                                                                                                
 </head>
 <body>
     <header class="header">
@@ -32,7 +39,7 @@
                                 </a>
                             </li>
                             <li class="menu__list-item">
-                                <a href="" class="menu__list-link">
+                                <a href="#portfolio" class="menu__list-link">
                                     PORTFOLIO
                                 </a>
                             </li>
@@ -148,5 +155,144 @@
             </div>
         </div>
     </section>
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="portfolio__top">
+                <h2 class="title">Portfolio</h2>
+            <div class="portfolio__filter-btn"></div>
+                <button class="portfolio__btn" data-filter="all">ALL </button>
+                <button class="portfolio__btn" data-filter=".category-a">BRANDING</button>
+                <button class="portfolio__btn" data-filter=".category-b">DESIGN</button>
+                <button class="portfolio__btn" data-filter=".category-c">PHOTOGRAPHY</button>
+                <button class="portfolio__btn" data-filter=".category-d">ILLUSTRATION</button>
+            </div>
+        </div>
+        <div class="portfolio__content">
+            <div class="portfolio__item mix category-a">
+                <img src="img/portfolio/1.jpg" alt="">
+                <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+            </div>
+            <div class="portfolio__item mix category-a">
+                <img src="img/portfolio/5.jpg" alt="">
+                <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+            </div>
+            <div class="portfolio__item mix category-b">
+                <img src="img/portfolio/6.jpg" alt="">
+                <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+            </div>
+            <div class="portfolio__item mix category-b">
+                <img src="img/portfolio/6.jpg" alt="">
+                <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+            </div>
+            <div class="portfolio__item mix category-b">
+                <img src="img/portfolio/9.jpg" alt="">
+                <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+            </div>
+            <div class="portfolio__item mix category-c">
+                <img src="img/portfolio/3.jpg" alt="">
+                <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+            </div>
+            <div class="portfolio__item mix category-c">
+                <img src="img/portfolio/7.jpg" alt="">
+                <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+            </div>
+            <div class="portfolio__item mix category-c">
+                <img src="img/portfolio/4.jpg" alt="">
+                <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+            </div>
+            <div class="portfolio__item mix category-d">
+                <img src="img/portfolio/8.jpg" alt="">
+                <a href="#" class="portfolio__item-link">SHOW PROJECT</a>
+            </div>
+        </div>
+        <a href="#" class="portfolio__add">VIEW MORE PROJECTS</a>
+        <blockquote class="blockquote">
+            «Неважно какую историю вы рассказываете, главное – сделайте своего покупателя героем»
+            <span class="blockquote__author">Крис Броган</span>
+        </blockquote>
+        <div class="portfolio__video">
+            <a data-fancybox class="portfolio__video-link" href="https://youtu.be/YtZZ-hxz9TI">
+                <img src="img/portfolio/play.png" alt="img">
+            </a>
+        </div>
+        <div class="container">
+            <div class="portfolio__numbers">
+                <h5 class="portfolio__numbers-item">
+                    305
+                    <span>Web Designs</span>
+                </h5>
+                <h5 class="portfolio__numbers-item">
+                    220
+                    <span>Logo Designs</span>
+                </h5>
+                <h5 class="portfolio__numbers-item">
+                    52
+                    <span>Print Designs</span>
+                </h5>
+            <h5 class="portfolio__numbers-item">
+                    88
+                    <span>Mobile Apps</span>
+                </h5>
+            </div>
+        </div>
+    </section>
+    <section class="slider-blog">
+        <div class="container">
+            <div class="slider-blog__inner">
+                <div class="slider-blog__item">
+                    <a href="#" class="slider-blog__item-link">
+                        <h3 class="slider-blog__item-title">
+                            АНИМИРОВАННЫЙ ЛОГОТИП – ТРЕНД ИЛИ НЕОБХОДИМОСТЬ?
+                        </h3>
+                    </a>
+                    <p class="slider-blog__item-descr">Что представляет собой анимированный логотип, и в чем его преимущества? И почему сейчас это модно? Давайте обсудим.</p>
+                </div>
+                <div class="slider-blog__item">
+                    <a href="#" class="slider-blog__item-link">
+                        <h3 class="slider-blog__item-title">
+                            АНИМИРОВАННЫЙ ЛОГОТИП – ТРЕНД ИЛИ НЕОБХОДИМОСТЬ?
+                        </h3>
+                    </a>
+                    <p class="slider-blog__item-descr">Что представляет собой анимированный логотип, и в чем его преимущества? И почему сейчас это модно? Давайте обсудим.</p>
+                </div>
+                <div class="slider-blog__item">
+                    <a href="#" class="slider-blog__item-link">
+                        <h3 class="slider-blog__item-title">
+                            АНИМИРОВАННЫЙ ЛОГОТИП – ТРЕНД ИЛИ НЕОБХОДИМОСТЬ?
+                        </h3>
+                    </a>
+                    <p class="slider-blog__item-descr">Что представляет собой анимированный логотип, и в чем его преимущества? И почему сейчас это модно? Давайте обсудим.</p>
+                </div>
+                <div class="slider-blog__item">
+                    <a href="#" class="slider-blog__item-link">
+                        <h3 class="slider-blog__item-title">
+                            АНИМИРОВАННЫЙ ЛОГОТИП – ТРЕНД ИЛИ НЕОБХОДИМОСТЬ?
+                        </h3>
+                    </a>
+                    <p class="slider-blog__item-descr">Что представляет собой анимированный логотип, и в чем его преимущества? И почему сейчас это модно? Давайте обсудим.</p>
+                </div>
+                <div class="slider-blog__item">
+                    <a href="#" class="slider-blog__item-link">
+                        <h3 class="slider-blog__item-title">
+                            АНИМИРОВАННЫЙ ЛОГОТИП – ТРЕНД ИЛИ НЕОБХОДИМОСТЬ?
+                        </h3>
+                    </a>
+                    <p class="slider-blog__item-descr">Что представляет собой анимированный логотип, и в чем его преимущества? И почему сейчас это модно? Давайте обсудим.</p>
+                </div>
+                <div class="slider-blog__item">
+                    <a href="#" class="slider-blog__item-link">
+                        <h3 class="slider-blog__item-title">
+                            АНИМИРОВАННЫЙ ЛОГОТИП – ТРЕНД ИЛИ НЕОБХОДИМОСТЬ?
+                        </h3>
+                    </a>
+                    <p class="slider-blog__item-descr">Что представляет собой анимированный логотип, и в чем его преимущества? И почему сейчас это модно? Давайте обсудим.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="js/script.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 </body>                                                                                                                                                                                                                                                                                                 
 </html>
