@@ -1,3 +1,49 @@
 .slider-blog
     background-color: #F8F6FA
-    padding: 115px 0
+    padding: 360px 0 114px 0
+    &__item
+        &-title   
+            color: #242121
+            font-family: SF Pro Display
+            font-size: 36px
+            font-weight: 700
+            line-height: 144.444%
+            margin-bottom: 10px
+        &-descr
+            color: #373A39
+            font-family: SF Pro Display
+            font-size: 14px
+            font-weight: 300
+            line-height: 171.429% 
+            max-width: 675px
+ 
+    .slick-dots
+        display: flex
+        gap: 13px   
+        margin-top: 190px
+    .slick-dots .slick-active button
+        opacity: 1
+        width: 10px
+        height: 10px 
+    .slick-dots button
+        background-color: #242121
+        opacity: 0.4
+        width: 6px
+        height: 6px
+        border-radius: 50%
+        font-size: 0
+        padding: 0
+        border: none
+    .slick-next,
+    .slick-prev 
+        border: none
+        background-color: transparent
+        padding: 0
+        cursor: pointer
+        position: absolute
+        top: 17%
+        transform: translateY(-50%)
+    .slick-prev
+        left: -95px
+    .slick-next
+        right: -95px

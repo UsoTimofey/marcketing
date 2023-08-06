@@ -33,14 +33,25 @@
             right: -7px
             top: -2px
             width: 100%
+    &__text
+        margin-left: 30px 
+        p
+            color: #373A39
+            font-family: SF Pro Display
+            font-size: 14px
+            font-weight: 200
+            line-height: 171.429% 
+    &__text p:not(:last-child)
+        margin-bottom: 25px
     &__items
         display: flex
+        justify-content: space-between
+        gap: 30px
     &__item
         display: flex
         position: relative
         gap: 35px
         flex-basis: 370px
-        padding-left: 85px
         img
             width: 50px
             height: 50px
@@ -54,10 +65,8 @@
             margin-bottom: 14px
         &-text
             color: #777
+            font-family: SF Pro Display
             font-size: 14px
-            font-weight: 300
+            font-weight: 200
             line-height: 24px
-    &__text p
-       margin-left: 30px   
-    &__text p:not(:last-child)
-        margin-bottom: 25px
+    
